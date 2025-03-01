@@ -16,9 +16,8 @@ export type PodcastType = {
 };
 
 export async function getPodcasts(): Promise<PodcastType[]> {
-  const res = await fetch(
-    "http://localhost:3000/json/podcasts.json"
-  );
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://bitwes.vercel.app';
+  const res = await fetch(`${baseUrl}/json/podcasts.json`);
 
   if (!res.ok) {
     throw new Error("Failed to fetch podcast data");
