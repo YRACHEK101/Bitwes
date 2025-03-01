@@ -10,8 +10,8 @@ import Subheading from "@/components/Subheading";
 import { Suspense } from "react";
 
 export const metadata = {
-  title: "Fyrre Magazine | Art & Life | Home",
-  description: "Articles, podcasts and news from the Berlin cultural scene",
+  title: "BITWES",
+  description: "BitWes",
 };
 
 export default function Home() {
@@ -22,7 +22,7 @@ export default function Home() {
         imgSrc="/images/titles/Art&Life.svg"
         imgAlt="The words 'Art & Life' in bold uppercase lettering"
       >
-        Art & Life
+        Art et vie
       </PageTitle>
 
       <Suspense fallback={<NewsLoading />}>
@@ -48,7 +48,7 @@ export default function Home() {
         url="/authors"
         linkText="All authors"
       >
-        Authors
+        Auteurs
       </Subheading>
 
       <Suspense fallback={<AuthorsLoading />}>

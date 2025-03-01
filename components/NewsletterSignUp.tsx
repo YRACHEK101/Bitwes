@@ -73,9 +73,9 @@ export default function NewsletterSignUp({
         <Button
           disabled={isSubmitting}
           type="submit"
-          className={`disabled:cursor-none ${buttonClassName}`}
+          className={`disabled:cursor-not-allowed disabled:opacity-50 ${buttonClassName}`}
         >
-          Sign Up
+          {isSubmitting ? "Envoi en cours..." : "S'inscrire"}
         </Button>
       </div>
       {errors.email && (
