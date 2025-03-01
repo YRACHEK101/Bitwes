@@ -1,5 +1,10 @@
 {
   "pages": {
+    "/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/page.js"
+    ],
     "/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -11,35 +16,20 @@
       "static/chunks/main-app.js",
       "static/chunks/app/not-found.js"
     ],
-    "/page": [
+    "/[...not_found]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
+      "static/chunks/app/[...not_found]/page.js"
     ],
-    "/magazine/page": [
+    "/magazine/[title]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/magazine/page.js"
+      "static/chunks/app/magazine/[title]/page.js"
     ],
     "/podcasts/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/podcasts/page.js"
-    ],
-    "/authors/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/authors/page.js"
-    ],
-    "/authors/loading": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/authors/loading.js"
-    ],
-    "/[...not_found]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/[...not_found]/page.js"
     ]
   }
 }

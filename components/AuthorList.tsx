@@ -23,18 +23,18 @@ export default async function AuthorsList() {
             </div>
             <div className="flex flex-col lg:flex-row gap-2 lg:gap-24">
               <div className="flex gap-2">
-                <p className="font-semibold">Job</p>
+                <p className="font-semibold">Travail</p>
                 <p>{authors.job}</p>
               </div>
               <div className="flex gap-2">
-                <p className="font-semibold">City</p>
+                <p className="font-semibold">Ville</p>
                 <p>{authors.city}</p>
               </div>
               <Link
                 className="flex gap-2"
                 href={`authors/${formatString(authors.author)}`}
               >
-                <span className="uppercase font-semibold">About</span>
+                <span className="uppercase font-semibold">À propos</span>
                 <img
                   src="/icons/ri_arrow-right-line.svg"
                   alt="An arrow pointing right"

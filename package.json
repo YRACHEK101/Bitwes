@@ -3,12 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "rm -rf .next && next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "test:e2e": "playwright test",
-    "prepare": "husky install"
+    "dev": "rm -rf .next && next dev"
   },
   "dependencies": {
     "@axe-core/playwright": "^4.8.1",
