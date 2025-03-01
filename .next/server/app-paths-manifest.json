@@ -1,7 +1,5 @@
 {
-  "/podcasts/page": "app/podcasts/page.js",
-  "/page": "app/page.js",
-  "/podcasts/[title]/page": "app/podcasts/[title]/page.js",
-  "/magazine/page": "app/magazine/page.js",
-  "/[...not_found]/page": "app/[...not_found]/page.js"
+  "/[...not_found]/page": "app/[...not_found]/page.js",
+  "/authors/[author]/page": "app/authors/[author]/page.js",
+  "/page": "app/page.js"
 }

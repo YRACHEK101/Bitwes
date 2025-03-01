@@ -21,30 +21,15 @@
       "static/chunks/main-app.js",
       "static/chunks/app/[...not_found]/page.js"
     ],
-    "/magazine/[title]/page": [
+    "/authors/loading": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/magazine/[title]/page.js"
+      "static/chunks/app/authors/loading.js"
     ],
-    "/podcasts/page": [
+    "/authors/[author]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/podcasts/page.js"
-    ],
-    "/podcasts/[title]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/podcasts/[title]/page.js"
-    ],
-    "/podcasts/[title]/loading": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/podcasts/[title]/loading.js"
-    ],
-    "/magazine/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/magazine/page.js"
+      "static/chunks/app/authors/[author]/page.js"
     ]
   }
 }

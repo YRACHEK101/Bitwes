@@ -1,0 +1,9 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[379],{6610:function(e,t,r){Promise.resolve().then(r.bind(r,2575)),Promise.resolve().then(r.t.bind(r,413,23)),Promise.resolve().then(r.t.bind(r,8326,23))},2575:function(e,t,r){"use strict";r.r(t),r.d(t,{default:function(){return PodcastContextProvider}});var o=r(7437),n=r(2265);async function getPodcasts(){let e=await fetch("".concat("https://bitwes.vercel.app","/json/podcasts.json"));if(!e.ok)throw Error("Failed to fetch podcast data");return e.json()}let s=(0,n.createContext)(null);function PodcastContextProvider(e){let{children:t,limit:r=null}=e,[c,a]=(0,n.useState)([]);return(0,n.useEffect)(()=>{let fetchData=async()=>{try{let e=await getPodcasts(),t=r?e.slice(0,r):e;a(t)}catch(e){console.log("Error fetching data",e)}};fetchData()},[r]),(0,o.jsx)(s.Provider,{value:{data:c,setData:a},children:t})}},622:function(e,t,r){"use strict";/**
+ * @license React
+ * react-jsx-runtime.production.min.js
+ *
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */var o=r(2265),n=Symbol.for("react.element"),s=Symbol.for("react.fragment"),c=Object.prototype.hasOwnProperty,a=o.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,i={key:!0,ref:!0,__self:!0,__source:!0};function q(e,t,r){var o,s={},f=null,l=null;for(o in void 0!==r&&(f=""+r),void 0!==t.key&&(f=""+t.key),void 0!==t.ref&&(l=t.ref),t)c.call(t,o)&&!i.hasOwnProperty(o)&&(s[o]=t[o]);if(e&&e.defaultProps)for(o in t=e.defaultProps)void 0===s[o]&&(s[o]=t[o]);return{$$typeof:n,type:e,key:f,ref:l,props:s,_owner:a.current}}t.Fragment=s,t.jsx=q,t.jsxs=q},7437:function(e,t,r){"use strict";e.exports=r(622)}},function(e){e.O(0,[326,413,971,472,744],function(){return e(e.s=6610)}),_N_E=e.O()}]);

@@ -3,6 +3,7 @@ import { getArticles } from "@/app/functions/getArticles";
 import PostNavigation from "@/components/PostNavigation";
 import SocialSharing from "@/components/SocialSharing";
 import Link from "next/link";
+import { AuthorData } from '@/app/types/author';
 
 type AuthorData = {
   author: string;
@@ -51,13 +52,14 @@ export async function generateMetadata({
   };
 }
 
-export default async function AuthorDetails({
+export default async function AuthorPage({
   params,
 }: {
   params: { author: string };
 }) {
   try {
-    const authors: AuthorData[] = await getArticles();
+    const articles = await getArticles();
+    const authors = articles as unknown as AuthorData[];  // Type assertion
 
     const decodedAuthor = decodeURIComponent(params.author);
 
