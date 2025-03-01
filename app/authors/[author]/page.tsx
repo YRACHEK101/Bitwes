@@ -3,30 +3,7 @@ import { getArticles } from "@/app/functions/getArticles";
 import PostNavigation from "@/components/PostNavigation";
 import SocialSharing from "@/components/SocialSharing";
 import Link from "next/link";
-import { AuthorData } from '@/app/types/author';
-
-type AuthorData = {
-  author: string;
-  job: string;
-  city: string;
-  avatar: string;
-  imgAlt: string;
-  slug: string;
-  biography: {
-    summary: string;
-    body: string;
-  };
-  articles: ArticleData[];
-};
-
-type ArticleData = {
-  title: string;
-  img: string;
-  date: string;
-  read: string;
-  label: string;
-  slug: string;
-};
+import { AuthorData, ArticleData } from '@/app/types/author';
 
 export async function generateMetadata({
   params,
