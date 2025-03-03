@@ -1,6 +1,6 @@
 # Bitwes - An Economic Blog
 
-![Bitwes Banner](BANNER_IMAGE_URL_HERE)
+
 
 A modern economic blog built with the MERN stack, featuring responsive design, dynamic content rendering, and comprehensive testing.
 
