@@ -156,12 +156,14 @@ export default async function ArticleDetails({
               {matchingArticle.content[0].summary}
             </p>
             <p className="my-6">{matchingArticle.content[1].section1}</p>
-            <div className="border-t-2 border-b-2 border-black my-6 py-12">
-              <p className="text-blog-quote mb-6">
-                &ldquo;{matchingArticle.content[2].quote[0]}
-              </p>
-              <p>{matchingArticle.content[2].quote[1]}</p>
-            </div>
+            {matchingArticle?.content[2]?.quote && (
+              <div className="border-t-2 border-b-2 border-black my-6 py-12">
+                <p className="text-blog-quote mb-6">
+                  &ldquo;{matchingArticle.content[2].quote[0] || ''}
+                </p>
+                <p>{matchingArticle.content[2].quote[1] || ''}</p>
+              </div>
+            )}
             <p className="text-xl font-medium mb-6">
               {matchingArticle.content[3].summary2}
             </p>

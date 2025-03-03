@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "vercel-build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "clean": "rm -rf .next && rm -rf node_modules"
   },
   "dependencies": {
     "@axe-core/playwright": "^4.8.1",
@@ -23,6 +24,7 @@
     "react-dom": "latest",
     "react-hook-form": "^7.48.2",
     "shadcn-ui": "^0.4.0",
+    "sharp": "^0.32.6",
     "tailwind-merge": "^1.14.0",
     "tailwindcss-animate": "^1.0.7",
     "zod": "^3.22.4"

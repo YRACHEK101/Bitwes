@@ -8,8 +8,10 @@ export default function ArticleFilterButtons() {
 
   const labels = [
     "All",
-    ...new Set(
-      data.flatMap((article) => article.articles.map((item) => item.label))
+    ...Array.from(
+      new Set(
+        data.flatMap((article) => article.articles.map((item) => item.label))
+      )
     ),
   ];
 

@@ -1,41 +1,10 @@
-export type ArticleType = {
-  id: number;
-  author: string;
-  job: string;
-  city: string;
-  avatar: string;
-  imgAlt: string;
-  slug: string;
-  articles: Array<{
-    title: string;
-    popular: boolean;
-    popularity: number;
-    description: string;
-    date: string;
-    read: string;
-    label: string;
-    img: string;
-    imgAlt: string;
-    slug: string;
-    content: Array<{
-      img: string;
-      summary: string;
-      section1: string;
-      quote: Array<string>;
-      summary2: string;
-      section2: string;
-    }>;
-  }>;
-};
+import articlesData from '@/json/articles.json';
+import { AuthorData } from '@/app/types/author';
 
-export async function getArticles() {
-  const res = await fetch(
-    "http://localhost:3000/json/articles.json"
-  );
+export type ArticleType = AuthorData;
 
-  if (!res.ok) {
-    throw new Error("Failed to fetch article data");
-  }
-
-  return res.json();
+export async function getArticles(): Promise<ArticleType[]> {
+  // Type assertion to ensure the data matches our type
+  const data = articlesData as unknown as ArticleType[];
+  return data;
 }

@@ -6,8 +6,9 @@ import { Separator } from "@radix-ui/react-separator";
 import Link from "next/link";
 import Loading from "./loading";
 import Image from "next/image";
+import { ArticleData } from '@/app/types/author';
 
-export default function LatestArticles() {
+export default function LatestArticles({ articles }: { articles: ArticleData[] }) {
   const { data } = useArticleContext();
 
   if (data.length > 0 && data[0].articles.length > 0) {
@@ -57,14 +58,18 @@ export default function LatestArticles() {
               </article>
             </article>
             <div>
-              <Image
-                className="w-full object-cover aspect-[9/6]"
-                src={latestArticle.content[0].img}
-                alt={latestArticle.imgAlt}
-                width={1488}
-                height={992}
-                priority
-              />
+              {latestArticle.content[0]?.img ? (
+                <Image
+                  className="w-full object-cover aspect-[9/6]"
+                  src={latestArticle.content[0].img}
+                  alt={latestArticle.imgAlt || 'Article image'}
+                  width={1488}
+                  height={992}
+                  priority
+                />
+              ) : (
+                <div className="w-full aspect-[9/6] bg-gray-200" />
+              )}
             </div>
           </article>
         </div>

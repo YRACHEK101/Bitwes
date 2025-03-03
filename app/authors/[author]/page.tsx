@@ -36,10 +36,9 @@ export default async function AuthorPage({
 }) {
   try {
     const articles = await getArticles();
-    const authors = articles as unknown as AuthorData[];  // Type assertion
+    const authors = articles as unknown as AuthorData[];
 
     const decodedAuthor = decodeURIComponent(params.author);
-
     const authorData = authors.find(
       (author: AuthorData) => author.slug === decodedAuthor
     );
@@ -47,6 +46,9 @@ export default async function AuthorPage({
     if (!authorData) {
       return <p>Author not found</p>;
     }
+
+    // Add null check for biography
+    const biography = authorData.biography || { summary: '', body: '' };
 
     return (
       <main className="max-w-[95rem] w-full mx-auto px-4 sm:pt-4 xs:pt-2 lg:pb-4 md:pb-4 sm:pb-2 xs:pb-2">
@@ -83,9 +85,9 @@ export default async function AuthorPage({
           <article>
             <h1 className="text-subheading pb-8">{authorData.author}</h1>
             <p className="text-blog-summary pb-12">
-              {authorData.biography.summary}
+              {biography.summary}
             </p>
-            <p>{authorData.biography.body}</p>
+            <p>{biography.body}</p>
           </article>
         </article>
         <div className="pb-12 md:pb-48">
@@ -98,7 +100,7 @@ export default async function AuthorPage({
     );
   } catch (error) {
     console.error("Error fetching author details:", error);
-    return <p>Error fetching author details</p>;
+    return <p>Error loading author data</p>;
   }
 }
 
