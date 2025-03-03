@@ -5,7 +5,7 @@
       "author": "Denise Morrison",
       "job": "Entrepreneure",
       "city": "New York",
-      "avatar": "/images/authors/denise-morrison.jpg",
+      "avatar": "/images/authors/jakob-grønberg.jpg",
       "imgAlt": "Un portrait en noir et blanc de Denise Morrison, une femme élégante dans la cinquantaine avec un sourire confiant, regardant légèrement sur le côté",
       "slug": "denise-morrison",
       "biography": {
@@ -249,7 +249,7 @@
     "author": "Jack Dorsey",
     "job": "Entrepreneur",
     "city": "San Francisco",
-    "avatar": "/images/authors/jack-dorsey.jpg",
+    "avatar": "/images/authors/louise-jensen.jpg",
     "imgAlt": "Un portrait en noir et blanc de Jack Dorsey, regardant la caméra avec une expression contemplative",
     "slug": "jack-dorsey",
     "biography": {
@@ -361,7 +361,7 @@
     "author": "Angela Ahrendts",
     "job": "Dirigeante d'entreprise",
     "city": "Londres",
-    "avatar": "/images/authors/angela-ahrendts.jpg",
+    "avatar": "/images/authors/anne-henry.jpg",
     "imgAlt": "Un portrait en noir et blanc d'Angela Ahrendts, une femme élégante aux cheveux mi-longs souriant avec assurance, vêtue d'une veste professionnelle",
     "slug": "angela-ahrendts",
     "biography": {
@@ -441,7 +441,7 @@
       "author": "Bernard Arnault",
       "job": "Homme d'affaires",
       "city": "Paris",
-      "avatar": "/images/authors/bernard-arnault.jpg",
+      "avatar": "/images/authors/anna-nielsen.jpg",
       "imgAlt": "Un portrait en noir et blanc de Bernard Arnault, vêtu d'un costume élégant, regardant la caméra avec un air réfléchi",
       "slug": "bernard-arnault",
       "biography": {
@@ -523,7 +523,7 @@
       "author": "Helena Rubinstein",
       "job": "Entrepreneure",
       "city": "Paris",
-      "avatar": "/images/authors/helena-rubinstein.jpg",
+      "avatar": "/images/authors/jane-cooper.jpg",
       "imgAlt": "Un portrait en noir et blanc d'Helena Rubinstein, une femme élégante aux cheveux courts coiffés avec soin, portant un collier de perles et un regard confiant",
       "slug": "helena-rubinstein",
       "biography": {
@@ -603,7 +603,7 @@
     "author": "Gordon Ramsay",
     "job": "Chef cuisinier",
     "city": "Londres",
-    "avatar": "/images/authors/gordon-ramsay.jpg",
+    "avatar": "/images/authors/cristofer-vaccaro.jpg",
     "imgAlt": "Un portrait en noir et blanc de Gordon Ramsay, un homme dans la cinquantaine avec des cheveux courts coiffés en arrière, un regard perçant et une veste de chef emblématique",
     "slug": "gordon-ramsay",
     "biography": {
