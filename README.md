@@ -147,6 +147,8 @@ The template is hosted on Vercel, offering:
 - ✅ No configuration required
 
 ## ⚡ Performance
+<!-- Uploading "Capture d’écran 2025-03-03 à 07.06.53.png"... -->
+<!-- Uploading "Capture d’écran 2025-03-03 à 07.07.19.png"... -->
 
 The project is optimized for:
 - Fast load times
