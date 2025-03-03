@@ -57,7 +57,7 @@ export default async function AuthorPage({
           <div className="w-fit">
             <img src={authorData.avatar} alt={authorData.imgAlt} />
             <div className="flex justify-between border-top border-t border-black mt-12 pt-6">
-              <p className="uppercase font-semibold text-lg">Follow</p>
+              <p className="uppercase font-semibold text-lg">Suivez</p>
               <SocialSharing
                 links={[
                   {
@@ -92,7 +92,7 @@ export default async function AuthorPage({
         </article>
         <div className="pb-12 md:pb-48">
           <h2 className="text-blog-subheading mt-[9.5rem] pt-12 pb-12 md:pb-24">
-            Articles by {authorData.author}
+          Articles de {authorData.author}
           </h2>
           <AuthorArticles articles={authorData.articles} />
         </div>
@@ -100,7 +100,7 @@ export default async function AuthorPage({
     );
   } catch (error) {
     console.error("Error fetching author details:", error);
-    return <p>Error loading author data</p>;
+    return <p>Erreur de chargement des données d'auteur</p>;
   }
 }
 
@@ -129,7 +129,7 @@ function AuthorArticles({ articles }: { articles: ArticleData[] }) {
                 <time dateTime={article.date}>{article.date}</time>
               </span>
               <span className="flex">
-                <p className="font-semibold pr-2">City</p>
+                <p className="font-semibold pr-2">Ville</p>
                 <p className="">{article.label}</p>
               </span>
             </div>

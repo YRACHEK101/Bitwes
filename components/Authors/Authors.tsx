@@ -27,11 +27,11 @@ export default async function Authors() {
             </p>
             <div className="flex gap-8">
               <span className="flex">
-                <p className="font-semibold pr-2">Job</p>
+                <p className="font-semibold pr-2">Travail</p>
                 <p className="">{article.job}</p>
               </span>
               <span className="flex">
-                <p className="font-semibold pr-2">City</p>
+                <p className="font-semibold pr-2">Ville</p>
                 <p className="">{article.city}</p>
               </span>
             </div>

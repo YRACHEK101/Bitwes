@@ -47,7 +47,7 @@ export default async function PodcastDetails({
           <article className="flex flex-col lg:w-1/4">
             <img className="" src={podcastData.img} alt={podcastData.imgAlt} />
             <div className="flex justify-between mt-8 pb-12 border-b border-black">
-              <p className="text-xl font-semibold">Listen On</p>
+              <p className="text-xl font-semibold">Écouter sur</p>
               <SocialSharing
                 links={[
                   {
@@ -77,11 +77,11 @@ export default async function PodcastDetails({
                 <time dateTime={podcastData.date}>{podcastData.date}</time>
               </div>
               <div className="flex flex-wrap justify-between">
-                <p className="font-semibold">Duration</p>
+                <p className="font-semibold">Durée de l'accord</p>
                 <p>{podcastData.duration}</p>
               </div>
               <div className="flex flex-wrap justify-between">
-                <p className="flex font-semibold">Share</p>
+                <p className="flex font-semibold">Partagez</p>
                 <SocialSharing
                   links={[
                     {
@@ -132,7 +132,7 @@ export default async function PodcastDetails({
         </article>
         <div className="pb-12 md:pb-48">
           <h2 className="text-blog-subheading border-t-2 border-black mt-[9.5rem] pt-12 pb-12 md:pb-24">
-            Latest Episodes
+          Derniers épisodes
           </h2>
           <PodcastContextProvider limit={3}>
             <LatestPodcasts />

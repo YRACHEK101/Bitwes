@@ -14,11 +14,11 @@ export default function Sidebar() {
         src={magazineCover}
         alt="A rust-colored magazine cover, showing a sculpture of a man, the words 'FYRRE MAGAZINE' on the top left and '03/2022' on the bottom right, a gold badge just above with 'EXCLUSIVE JAKOB GRONBERG INTERVIEW' printed on it, and an arrow pointing in the bottom right corner"
       />
-      <Button>Order</Button>
+      <Button>Commande</Button>
       <PopularArticles />
       <div className="bg-[#f8f8f8] p-[1.88rem] mt-16">
-        <h3 className="uppercase font-semibold mb-2">Newsletter</h3>
-        <p className="heading3-title mb-4">Design News to your Inbox</p>
+        <h3 className="uppercase font-semibold mb-2">Bulletin d'information</h3>
+        <p className="heading3-title mb-4">Nouvelles du design dans votre boîte de réception</p>
         <NewsletterSignUp />
       </div>
     </aside>

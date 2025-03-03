@@ -25,7 +25,7 @@ export default async function PodcastsList() {
               <p>{podcasts.date}</p>
               <p>{podcasts.duration}</p>
               <Link className="flex gap-2" href={`podcasts/${podcasts.slug}`}>
-                <span className="uppercase font-semibold">Listen</span>
+                <span className="uppercase font-semibold">Écouter</span>
                 <img
                   src="/icons/ri_arrow-right-line.svg"
                   alt="An arrow pointing right"

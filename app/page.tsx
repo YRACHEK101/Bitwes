@@ -38,7 +38,7 @@ export default async function Home() {
       <Subheading
         className="text-subheading"
         url="/podcasts"
-        linkText="All episodes"
+        linkText="Tous les épisodes"
       >
         Podcast
       </Subheading>
@@ -50,7 +50,7 @@ export default async function Home() {
       <Subheading
         className="text-subheading"
         url="/authors"
-        linkText="All authors"
+        linkText="Tous les auteurs"
       >
         Auteurs
       </Subheading>
