@@ -1,4 +1,7 @@
 # Bitwes - An Economic Blog
+<img width="1217" alt="Image" src="https://github.com/user-attachments/assets/1c17d9aa-5ad3-4835-8dc4-47f362f32ec0" />
+<img width="554" alt="Image" src="https://github.com/user-attachments/assets/d8d12c28-9fae-42b9-b88e-a6df3ff6058d" />
+<img width="353" alt="Image" src="https://github.com/user-attachments/assets/ec0294b3-210d-4861-8144-122294ebb348" />
 
 
 
