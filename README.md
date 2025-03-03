@@ -87,7 +87,7 @@ bitwes/
 ├── public/              # Static assets
 ```
 
-![Project Structure](PROJECT_STRUCTURE_IMAGE_URL_HERE)
+
 
 ## 🚀 Quick Start
 
@@ -147,8 +147,8 @@ The template is hosted on Vercel, offering:
 - ✅ No configuration required
 
 ## ⚡ Performance
-<!-- Uploading "Capture d’écran 2025-03-03 à 07.06.53.png"... -->
-<!-- Uploading "Capture d’écran 2025-03-03 à 07.07.19.png"... -->
+<<img width="879" alt="Image" src="https://github.com/user-attachments/assets/0d812686-225c-4df9-9e11-13b4495fc8da" />
+<img width="871" alt="Image" src="https://github.com/user-attachments/assets/959275ea-aa19-4be2-bc9b-c068470c3793" />
 
 The project is optimized for:
 - Fast load times
@@ -156,13 +156,7 @@ The project is optimized for:
 - Accessibility compliance
 - Mobile-first responsive design
 
-![Performance Metrics](PERFORMANCE_METRICS_URL_HERE)
 
-## 🎨 Theme Information
-
-- **Theme Name**: Fyrre 
-- **Designed by**: Webflow designer Pawel Gola
-- **Theme Site**: [HTMLRev Free Templates](https://htmlrev.com/free-nextjs-templates.html#blog)
 
 ## 📝 License
 
@@ -174,8 +168,4 @@ The project is optimized for:
 
 ---
 
-## 📞 Contact
 
-[Your Contact Information Here]
-
-![Footer Image](FOOTER_IMAGE_URL_HERE)
