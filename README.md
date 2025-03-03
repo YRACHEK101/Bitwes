@@ -1,174 +1,159 @@
-# Bitwes - An Economic Blog
-<img width="1217" alt="Image" src="https://github.com/user-attachments/assets/1c17d9aa-5ad3-4835-8dc4-47f362f32ec0" />
-<img width="554" alt="Image" src="https://github.com/user-attachments/assets/d8d12c28-9fae-42b9-b88e-a6df3ff6058d" />
-<img width="353" alt="Image" src="https://github.com/user-attachments/assets/ec0294b3-210d-4861-8144-122294ebb348" />
 
 
+# Bitwes - Un Blog Économique  
 
-A modern economic blog built with the MERN stack, featuring responsive design, dynamic content rendering, and comprehensive testing.
+<img width="1217" alt="Image" src="https://github.com/user-attachments/assets/1c17d9aa-5ad3-4835-8dc4-47f362f32ec0" />  
+<img width="554" alt="Image" src="https://github.com/user-attachments/assets/d8d12c28-9fae-42b9-b88e-a6df3ff6058d" />  
+<img width="353" alt="Image" src="https://github.com/user-attachments/assets/ec0294b3-210d-4861-8144-122294ebb348" />  
 
-## 🚀 Live Demo
+Un blog économique moderne construit avec la stack MERN, offrant un design réactif, un rendu dynamique du contenu et des tests complets.  
 
-[Visit Bitwes](https://bitwes.vercel.app/)
+## 🚀 Démo en ligne  
 
-## 📋 Features
+[Visitez Bitwes](https://bitwes.vercel.app/)  
 
-- Faithful adaptation to Figma designs
-- Custom designed and developed 404 error page
-- Dynamic rendering of podcast, article and author data
-- Dynamic filtering of magazine articles based on categories
-- JSON data for articles, podcasts and authors (emulating API endpoints)
-- React Suspense for UI loading states 
-- React Server Components (app router pages)
-- TypeScript for type safety
-- React Context API for global state management
-- Custom hooks for podcast and article context store calls
-- GSAP animations for horizontal sliding text
-- Shadcn for accessible components
-- Tailwind CSS for mobile-first responsiveness
-- E2E testing across multiple browsers using Playwright
-- Husky to run lint and testing prior to Git Commit
-- React Hook form with Zod Schema validation for email subscription input
-- Server Actions and Error handling using Next.js API routes for server-side validation
+## 📋 Fonctionnalités  
 
-![Feature Screenshot](FEATURE_SCREENSHOT_URL_HERE)
+- Adaptation fidèle aux designs Figma  
+- Page d'erreur 404 conçue et développée sur mesure  
+- Rendu dynamique des podcasts, articles et données des auteurs  
+- Filtrage dynamique des articles du magazine selon les catégories  
+- Données JSON pour les articles, podcasts et auteurs (émulation des endpoints API)  
+- React Suspense pour les états de chargement de l'interface utilisateur  
+- Composants Serveur React (pages avec routeur d'application)  
+- TypeScript pour la sécurité des types  
+- API Context de React pour la gestion globale de l'état  
+- Hooks personnalisés pour les appels au store des podcasts et articles  
+- Animations GSAP pour le texte défilant horizontalement  
+- Shadcn pour des composants accessibles  
+- Tailwind CSS pour une conception mobile-first réactive  
+- Tests E2E sur plusieurs navigateurs avec Playwright  
+- Husky pour exécuter le linting et les tests avant chaque commit Git  
+- Formulaire avec validation via React Hook Form et Zod  
+- Actions Serveur et gestion des erreurs avec les API routes de Next.js pour la validation côté serveur  
 
-## 🛠️ Tech Stack
+![Capture d'écran](FEATURE_SCREENSHOT_URL_HERE)  
 
-- **Frontend**: React.js, Next.js, TypeScript, Tailwind CSS
-- **Backend**: Node.js, Express.js
-- **Database**: MongoDB
-- **UI Components**: Shadcn UI
-- **Animation**: GSAP
-- **Testing**: Playwright
-- **Form Validation**: Zod
-- **Other**: React Server Components, React Suspense
+## 🛠️ Stack Technologique  
 
-## 📦 Package Versions
+- **Frontend** : React.js, Next.js, TypeScript, Tailwind CSS  
+- **Backend** : Node.js, Express.js  
+- **Base de données** : MongoDB  
+- **Composants UI** : Shadcn UI  
+- **Animations** : GSAP  
+- **Tests** : Playwright  
+- **Validation des formulaires** : Zod  
+- **Autres** : Composants Serveur React, React Suspense  
 
-- Next.js: v14.x
-- React: v18.x
-- TypeScript: v5.x
-- Tailwind CSS: v3.x
-- Shadcn UI: latest
-- GSAP: latest
-- Playwright: latest
-- Zod: latest
+## 📦 Versions des Packages  
 
-## 🧰 Prerequisites for Customization
+- Next.js : v14.x  
+- React : v18.x  
+- TypeScript : v5.x  
+- Tailwind CSS : v3.x  
+- Shadcn UI : dernière version  
+- GSAP : dernière version  
+- Playwright : dernière version  
+- Zod : dernière version  
 
-To modify this template, you should have knowledge of:
-- ✔ Next.js
-- ✔ React.js
-- ✔ Tailwind CSS
-- ✔ TypeScript
-- ✔ React Server Components
-- ✔ Shadcn UI
+## 🧰 Prérequis pour la Personnalisation  
 
-## 📂 Project Structure
+Pour modifier ce modèle, vous devez avoir des connaissances en :  
+- ✔ Next.js  
+- ✔ React.js  
+- ✔ Tailwind CSS  
+- ✔ TypeScript  
+- ✔ Composants Serveur React  
+- ✔ Shadcn UI  
+
+## 📂 Structure du Projet  
 
 ```
 bitwes/
-├── app/                    # Next.js app router directory
-│   ├── articles/          # Article pages
-│   ├── authors/           # Author pages
-│   ├── magazine/          # Magazine pages
-│   ├── not-found/        # 404 page
-│   └── podcasts/         # Podcast pages
-├── components/            # React components
-│   ├── shared/           # Shared/common components
-│   └── ui/               # UI components
-├── data/                  # Data layer
-│   ├── articles/         # Article data
-│   ├── authors/          # Author data 
-│   ├── constants/        # Constants and config
-│   └── podcasts/         # Podcast data
-├── e2e/                  # End-to-end tests
-├── hooks/                # Custom React hooks
-├── json/                 # JSON data files
-├── lib/                  # Utility functions
-├── public/              # Static assets
-```
+├── app/                    # Répertoire du routeur d'application Next.js
+│   ├── articles/          # Pages des articles
+│   ├── authors/           # Pages des auteurs
+│   ├── magazine/          # Pages du magazine
+│   ├── not-found/        # Page 404
+│   └── podcasts/         # Pages des podcasts
+├── components/            # Composants React
+│   ├── shared/           # Composants partagés/généraux
+│   └── ui/               # Composants UI
+├── data/                  # Couche de données
+│   ├── articles/         # Données des articles
+│   ├── authors/          # Données des auteurs  
+│   ├── constants/        # Constantes et configuration  
+│   └── podcasts/         # Données des podcasts  
+├── e2e/                  # Tests end-to-end  
+├── hooks/                # Hooks React personnalisés  
+├── json/                 # Fichiers de données JSON  
+├── lib/                  # Fonctions utilitaires  
+├── public/              # Ressources statiques  
+```  
 
+## 🚀 Démarrage Rapide  
 
+### 1. Prérequis  
+Assurez-vous d'avoir la dernière version stable de Node.js :  
+- ✅ Node.js 18+  
+- ✅ npm 9+  
 
-## 🚀 Quick Start
-
-### 1. Prerequisites
-Make sure you have the latest stable version of Node.js:
-- ✅ Node.js 18+
-- ✅ npm 9+
-
-### 2. Installation
-Navigate to the project folder and install dependencies:
+### 2. Installation  
+Accédez au dossier du projet et installez les dépendances :  
 
 ```bash
 cd bitwes
 npm install
-```
+```  
 
-### 3. Launch the project
-After installation, start the development server:
+### 3. Lancement du projet  
+Après l'installation, démarrez le serveur de développement :  
 
 ```bash
 npm run dev
-```
+```  
 
-💻 Your application will be accessible at: http://localhost:3000
 
-![App Screenshot](APP_SCREENSHOT_URL_HERE)
 
-## 🏗️ Build & Deployment
+## 🏗️ Build & Déploiement  
 
-Run the following command to generate the build:
+Exécutez la commande suivante pour générer le build :  
 
 ```bash
 npm run build
-```
+```  
 
-To run tests before deployment:
+Pour tester avant le déploiement :  
 
 ```bash
 npm run test
-```
+```  
 
-🎉 Your site is ready to be deployed!
+🎉 Votre site est prêt à être déployé !  
 
-## ⚙️ Project Configuration
+## ⚙️ Configuration du Projet  
 
-- **Colors**: Modify colors in tailwind.config.js
-- **Typography**: Customize fonts in src/app/layout.tsx
-- **Content**: Edit JSON data files in the data directory to modify articles, podcasts and authors
+- **Couleurs** : Modifiez les couleurs dans `tailwind.config.js`  
+- **Typographie** : Personnalisez les polices dans `src/app/layout.tsx`  
+- **Contenu** : Modifiez les fichiers JSON dans le répertoire `data` pour ajuster les articles, podcasts et auteurs  
 
-## 🌐 Hosting
+## 🌐 Hébergement  
 
-The template is hosted on Vercel, offering:
-- ✅ Automatic deployments from Git
-- ✅ Pull request previews
-- ✅ Performance analytics
-- ✅ Edge Functions and Middleware support
-- ✅ No configuration required
+Le modèle est hébergé sur Vercel, offrant :  
+- ✅ Déploiements automatiques depuis Git  
+- ✅ Aperçus des pull requests  
+- ✅ Analytique des performances  
+- ✅ Prise en charge des Edge Functions et Middleware  
+- ✅ Aucune configuration requise  
 
-## ⚡ Performance
-<<img width="879" alt="Image" src="https://github.com/user-attachments/assets/0d812686-225c-4df9-9e11-13b4495fc8da" />
-<img width="871" alt="Image" src="https://github.com/user-attachments/assets/959275ea-aa19-4be2-bc9b-c068470c3793" />
+## ⚡ Performances  
 
-The project is optimized for:
-- Fast load times
-- SEO-friendly structure
-- Accessibility compliance
-- Mobile-first responsive design
+<img width="879" alt="Image" src="https://github.com/user-attachments/assets/0d812686-225c-4df9-9e11-13b4495fc8da" />  
+<img width="871" alt="Image" src="https://github.com/user-attachments/assets/959275ea-aa19-4be2-bc9b-c068470c3793" />  
 
-
-
-## 📝 License
-
-[License Information Here]
-
-## 👨‍💻 Contributing
-
-[Contribution Guidelines Here]
-
----
-
+Le projet est optimisé pour :  
+- Des temps de chargement rapides  
+- Une structure SEO-friendly  
+- Une conformité aux normes d'accessibilité  
+- Un design réactif mobile-first  
 
